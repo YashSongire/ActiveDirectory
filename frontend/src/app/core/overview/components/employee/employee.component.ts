@@ -17,20 +17,20 @@ export class EmployeeComponent implements OnInit {
 
   constructor(private employeeService: EmployeeService) {
     this.colDef = [
-      { headerName: "Name", field: "name", sortable: true, filter: true },
-      { headerName: "Designation", field: "designation", sortable: true, filter: true },
-      { headerName: "Address", field: "address", sortable: true, filter: true, flex:1 },
-      { headerName: "Country", field: "country", sortable: true, filter: true },
-      { headerName: "Email Address", field: "email", sortable: true, filter: true, flex : 1 },
-      { headerName: "Status", field: "status", sortable: true, filter: true },
-      { headerName: "Manager", field: "manager.name", sortable: true, filter: true },
-      { headerName: "Department", field: "department.domain.name", sortable: true, filter: true }
+      { headerName: "Name", field: "name" },
+      { headerName: "Designation", field: "designation" },
+      { headerName: "Address", field: "address" },
+      { headerName: "Country", field: "country" },
+      { headerName: "Email Address", field: "email", width:100
+       },
+      { headerName: "Status", field: "status" },
+      { headerName: "Manager", field: "manager.name" },
+      { headerName: "Department", field: "department.domain.name" }
     ];
   }
 
   gridOptions: GridOptions = {
     onGridReady: (params) => {
-      this.gridApi = params.api; // Store the grid API for later use
     }
   };
 
