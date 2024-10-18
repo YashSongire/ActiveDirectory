@@ -1,4 +1,4 @@
-# Project Name - Global Employee Information
+# Global Employee Information
 
 ## Overview
 
