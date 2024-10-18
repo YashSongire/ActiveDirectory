@@ -20,7 +20,7 @@ export class EmployeeComponent implements OnInit {
       { headerName: "Name", field: "name" },
       { headerName: "Designation", field: "designation" },
       { headerName: "Address", field: "address" },
-      { headerName: "Country", field: "country" },
+      { headerName: "Country", field: "country", width: 20 },
       { headerName: "Email Address", field: "email", width:100
        },
       { headerName: "Status", field: "status" },
