@@ -1,0 +1,19 @@
+<div class="accordion container" id="accordionExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <i><img src="assets/icons/arrow-down-circle-fill.svg" alt="My Icon" /></i><span>Employee Data</span>
+            </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="grid-container">
+                <ag-grid-angular style="height: 500px; width: 100%;" class="ag-theme-quartz" [columnDefs]="colDef" [rowData]="rowData"
+                    [pagination]="true">
+                </ag-grid-angular>
+            </div>
+        </div>
+    </div>
+</div>
+

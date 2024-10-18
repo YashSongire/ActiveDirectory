@@ -1,0 +1,29 @@
+   --------- DATABASE -----------
+   
+   CMD Connetion - 
+	sqlplus/nolog
+	conn /as sysdba
+ --------------Connection Setting -------
+ lsnrctl status
+ sqlplus / as sysdba
+SHOW PARAMETER local_listener;
+ALTER SYSTEM SET local_listener = '(ADDRESS=(PROTOCOL=TCP)(HOST=LAPTOP-U7L8GMCF)(PORT=1521))' SCOPE=BOTH;
+ALTER SYSTEM REGISTER;
+sqlplus system/<password>@xe
+
+------------------------
+ 
+	User Password Change - 
+		ALTER USER system IDENTIFIED BY Phinix24;
+		 ALTER USER C##Yash IDENTIFIED BY Phinix24
+		 conn system/Phinix24
+
+	Direction - 
+		Name of DATABASE - Employee_Direcotry
+		Username - C##Yash
+		Password - Phinix24
+		
+lsnrctl status
+
+-----------------APIs----------
+

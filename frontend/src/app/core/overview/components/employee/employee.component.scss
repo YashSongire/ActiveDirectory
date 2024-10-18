@@ -1,0 +1,18 @@
+::ng-deep .ag-theme-alpine .ag-header{
+    background-color: rgb(97, 89, 89);
+}
+
+.grid-container {
+    color: grey;
+}
+/* Change the background color of the accordion header */
+
+/* Change the text color of the accordion button */
+.accordion-button {
+    color: #000000;
+    background-color: #e0e4d2; /* Change this to your desired text color */
+}
+/* Optional: Change the background color when the accordion is expanded */
+.accordion-button:not(.collapsed) {
+    background-color: #ffffff; /* Change this to your desired expanded color */
+}
